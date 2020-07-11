@@ -1,10 +1,10 @@
 # openv 🔐
 
 ```
-# before
+🚨 BEFORE
 PGHOST=some.hostname.com PGUSER=root PGPASSWORD=top-secret psql
 
-# after
+✅ AFTER
 openv my-1password-secure-note -c psql
 ```
 
@@ -23,15 +23,14 @@ share certain environment configurations with your colleagues via 1Password shar
     brew tap tobiastrinks/openv
     brew install openv
     ```
-    or using npm
+    or using npm (requires installing the 1Password CLI manually: [official page](https://1password.com/de/downloads/command-line/))
     ```
-    # requires installing the 1Password CLI manually: https://1password.com/de/downloads/command-line/
     npm install -g @ttrinks/openv
     ```
 
 2. __1Password CLI Setup__ \
-    `openv` uses the official 1Password CLI to access your vaults and set secrets. To authenticate
-    checkout: https://support.1password.com/command-line-getting-started/
+    `openv` uses the official 1Password CLI to access your vaults and set secrets. More
+    information: https://support.1password.com/command-line-getting-started/
     ```
     op signin example.1password.com wendy_appleseed@example.com
     ```
@@ -45,8 +44,8 @@ share certain environment configurations with your colleagues via 1Password shar
 ## Usage
 
 1. __create new `Secure Note` on 1Password__ \
-    This content of the note must comply to the `.env` [RFC 2 specification](https://smartmob-rfc.readthedocs.io/en/latest/2-dotenv.html)
-    ![secure note](./docs/sample-secure-note.png)
+    The notes content must comply to the `.env` [RFC 2 specification](https://smartmob-rfc.readthedocs.io/en/latest/2-dotenv.html)
+    <img src="./docs/sample-secure-note.png" alt="Secure note" width="400"/>
 
 2. __start 1Password session__
     ```
