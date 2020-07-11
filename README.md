@@ -66,7 +66,7 @@ Options
 ```
 
 The `--command` flag is optional. If left blank `openv` will return the environment variables from your 1Password
-Secure Note to `stdout`. You can utilize this them for more advanced use-cases like exporting them to your current shell:
+Secure Note to `stdout`. You can utilize this for more advanced use-cases like exporting them to your current shell:
 ```
 export $(openv <secure-note-name>)
 ```
