@@ -84,6 +84,8 @@ As `openv` is able to read the secrets you store in the requested
 `Secret Note` you should inspect the source code to ensure that you
 trust the software.
 
+`openv` is unable to read your Master-Password, as it relies on the 1password-cli to access your vault.
+
 ## License (MIT)
 
 Copyright 2020 Tobias Trinks
