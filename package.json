@@ -1,0 +1,42 @@
+{
+  "name": "openv",
+  "version": "1.0.0",
+  "description": "Command Line Interface to set terminal session environment variables from 1Password secret notes.",
+  "main": "src/cli.js",
+  "bin": {
+    "@ttrinks/openv": "bin/openv",
+    "openv": "bin/openv"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "openv"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiastrinks/openv.git"
+  },
+  "author": "Tobias Trinks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobiastrinks/openv/issues"
+  },
+  "homepage": "https://github.com/tobiastrinks/openv#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "execa": "^4.0.3",
+    "meow": "^7.0.1",
+    "tabtab": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
