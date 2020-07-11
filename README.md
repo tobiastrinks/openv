@@ -57,13 +57,25 @@ share certain environment configurations with your colleagues via 1Password shar
    openv postgres-staging -c psql
    ```
 
-## Available options
-
+## Advanced usage
 ```
 Options
       --help          View manual
       --command, -c   The command you want to execute
       --env, -e       Manually overwrite values from 1Password note
+```
+
+The `--command` flag is optional. If left blank `openv` will return the environment variables from your 1Password
+Secure Note to `stdout`. You can utilize this them for more advanced use-cases like exporting them to your current shell:
+```
+export $(openv <secure-note-name>)
+```
+
+You can also specify multiple `--env` flags, to overwrite certain Secure Note variables. This enables you to easily
+adjust the environment without changing the Secure Note or creating multiple just slightly different Secure Notes
+to cover your use-cases.
+```
+openv <secure-note-name> -c <command> -e DBHOST=localhost -e DBPASSWORD=1234
 ```
 
 ## Security
