@@ -1,6 +1,6 @@
 {
   "name": "@ttrinks/openv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command Line Interface to set terminal session environment variables from 1Password secret notes.",
   "main": "src/cli.js",
   "bin": {

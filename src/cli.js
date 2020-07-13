@@ -22,10 +22,10 @@ const meowCli = () => meow(`
     
     Examples
       Login to your database using credentials from 1Password
-      $ openv psql-secrets psql
+      $ openv psql-secrets -c psql
       
       Run your web-app with 1Password configuration and overwrite API_URL
-      $ openv web-app-env npm run dev -e "API_URL=http://localhost:3000"
+      $ openv web-app-env -c "npm run dev" -e "API_URL=http://localhost:3000"
       
       Export secret environment variables in current shell
       $ export $(openv my-secrets)
